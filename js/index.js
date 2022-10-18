@@ -8,11 +8,11 @@ let index = 0;
 
 const draw = ()=>{
     if(dy != 0){
-        player.style.backgroundImage = `url('../img/templerun/Jump__00${index++}.png')`;
+        player.style.backgroundImage = `url('img/templerun/Jump__00${index++}.png')`;
     }else if (dx != 0){
-        player.style.backgroundImage = `url('../img/templerun/Run__00${index++}.png')`;
+        player.style.backgroundImage = `url('img/templerun/Run__00${index++}.png')`;
     }else{
-        player.style.backgroundImage = `url('../img/templerun/Idle__00${index++}.png')`;
+        player.style.backgroundImage = `url('img/templerun/Idle__00${index++}.png')`;
     }   
     if (index > 9) index = 0;
 
