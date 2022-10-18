@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("../img/graveyardtilesetnew/png/BG.png");
+}
+
+#tree {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-image: url("../img/graveyardtilesetnew/png/Objects/Tree.png");
+  background-repeat: no-repeat;
+  bottom: 85px;
+  left: 100px;
+  background-size: contain;
+}
+
+#tree2 {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-image: url("../img/graveyardtilesetnew/png/Objects/Tree.png");
+  background-repeat: no-repeat;
+  bottom: 110px;
+  left: 1200px;
+  background-size: contain;
+}
+
+#tombstone {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-image: url("../img/graveyardtilesetnew/png/Objects/TombStone (1).png");
+  background-repeat: no-repeat;
+  bottom: 150px;
+  left: 1000px;
+  background-size: contain;
+  z-index: -1;
+}
+
+#cross-stone {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/graveyardtilesetnew/png/Objects//TombStone (2).png");
+  background-repeat: no-repeat;
+  bottom: 150px;
+  left: 1070px;
+  background-size: contain;
+}
+
+#player {
+  position: absolute;
+  background-image: url("../img/templerun/Idle__000.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 127px;
+  bottom: 1000px;
+}
+
+#ground {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background-image: url("../img/graveyardtilesetnew/png/Tiles/Tile (2).png");
+  background-size: contain;
+}
+
+.turn {
+  transform: rotateY(180deg);
+}
+
+/*# sourceMappingURL=style.css.map */
