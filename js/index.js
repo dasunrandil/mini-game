@@ -1,5 +1,7 @@
 const player = document.getElementById('player');
 const ground = document.getElementById('ground');
+const bats = document.getElementById('bats');
+const cloud = document.getElementById('cloud');
 
 let dx = 0;
 let dy = 1;
@@ -70,6 +72,40 @@ addEventListener('keyup', ({key})=>{
 
 requestAnimationFrame(draw);
 requestAnimationFrame(animate);
+
+let bx = 0;
+let right = false;
+
+setInterval(()=>{
+    bats.style.left = `${bx}px`;
+    bx += !right ? 10 : -10;
+
+    if (bats.offsetLeft >= innerWidth){
+        right = true;
+        bats.style.top = `${Math.random() * 60}vh`;
+    }else if (bx + bats.offsetWidth <=0){
+        right =false;
+        bats.style.top = `${Math.random() * 60}vh`;
+    }
+},12);
+
+
+let cx = 0;
+let cright = false;
+
+setInterval(()=>{
+    cloud.style.left = `${cx}px`;
+    cx += !cright ? 5 : -5;
+
+    if (cloud.offsetLeft >= innerWidth){
+        cright = true;
+        cloud.style.top = `${Math.random() * 35}vh`;
+    }else if (bx + cloud.offsetWidth <=0){
+        cright =false;
+        cloud.style.top = `${Math.random() * 35}vh`;
+    }
+},60);
+
 
 // let j = 0;
 // let t1 = 0;
